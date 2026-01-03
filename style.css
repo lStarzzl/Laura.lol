@@ -538,3 +538,18 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
+
+/* Force hide cursor on all interactive elements */
+a, 
+button, 
+.nav-links a, 
+.faq-question, 
+.vt-link, 
+.footer-links a {
+    cursor: none !important;
+}
+
+/* Ensure the body and html maintain this even during transitions */
+html, body {
+    cursor: none !important;
+}
